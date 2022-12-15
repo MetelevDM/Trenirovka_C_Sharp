@@ -7,10 +7,21 @@ Console.Write("Введите второе число = ");
 int number2 = Convert.ToInt32(Console.ReadLine());
 int Max = number1;
 int Min = number2;
-if (Max < number2) 
+if (Max < number2)
+{
     Max = number2;
-//else Min=number2;Max = number2
-Console.WriteLine("Наиболшее число = "+Max);
-Console.WriteLine("Наименьшее число = "+Min);
+    Min = number1;
+    Console.WriteLine("Наиболшее число = " + Max);
+    Console.WriteLine("Наименьшее число = " + Min);
+}
+if (Min == Max)
+{
+    Console.WriteLine("Вы ввели одинаковые числа!!!");
+}
+if (Max > number2)
+{
+    Console.WriteLine("Наиболшее число = " + Max);
+    Console.WriteLine("Наименьшее число = " + Min);  
+}
 
 
