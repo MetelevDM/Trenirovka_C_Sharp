@@ -5,7 +5,8 @@
 1 -> нет */
 
 Console.WriteLine(" Введите число от 1 до 7 включительно, где цифра соответствует дню недели: ");
-int N= Convert.ToInt32(Console.ReadLine());
+int N = Convert.ToInt32(Console.ReadLine());
 
-if (N>0 && N<6) Console.WriteLine("Сегодня не выходной");
-else Console.WriteLine("Сегодня выходой");
+if (N > 0 && N < 6) Console.WriteLine("Сегодня не выходной");
+if (N > 5 && N < 8) Console.WriteLine("Сегодня выходной");
+if (N < 1 || N > 7) Console.WriteLine("Введите другое число");
