@@ -8,9 +8,15 @@
 Console.WriteLine("Введите целое трехзначное число: ");
 int P = Convert.ToInt32(Console.ReadLine());
 
-if (P > 99)
+if (P > 99 || P < -99)
 {
-    int N = P % 10;
-    Console.WriteLine(N);
+    while (P > 999 || P < -999)
+    {
+        P = P / 10;
+    }
+    P = P % 10;
+    Console.WriteLine(P);
+
 }
+
 else Console.WriteLine("Третьей цифры нет");
