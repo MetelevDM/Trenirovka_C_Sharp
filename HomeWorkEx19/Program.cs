@@ -10,11 +10,11 @@
 
 Задача 21 */
 Console.WriteLine("Введите пятизначное число: ");
-int Number= Convert.ToInt32(Console.ReadLine());
-if(Number>9999&& Number<100000)
+int Number = Convert.ToInt32(Console.ReadLine());
+if (Number > 9999 && Number < 100000)
 {
-    if(Number/1000==Number%100)
-    Console.WriteLine("число является палиндромом");
+    if (Number / 1000 == Number % 100)
+        Console.WriteLine("число является палиндромом");
     else Console.WriteLine("Число не является палиндромом");
 }
 
